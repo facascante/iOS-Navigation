@@ -21,6 +21,10 @@
 		AB25E38B16264878006E0576 /* LanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E38A16264878006E0576 /* LanguageViewController.m */; };
 		AB25E38E16264A76006E0576 /* TranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E38D16264A76006E0576 /* TranslateViewController.m */; };
 		AB25E39116265427006E0576 /* StaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E39016265427006E0576 /* StaticTableViewController.m */; };
+		AB25E39416266A54006E0576 /* DynamicTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E39316266A54006E0576 /* DynamicTableViewController.m */; };
+		AB25E3981626794F006E0576 /* france.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB25E3951626794F006E0576 /* france.gif */; };
+		AB25E3991626794F006E0576 /* germany.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB25E3961626794F006E0576 /* germany.gif */; };
+		AB25E39A1626794F006E0576 /* spain.gif in Resources */ = {isa = PBXBuildFile; fileRef = AB25E3971626794F006E0576 /* spain.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,11 @@
 		AB25E38D16264A76006E0576 /* TranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateViewController.m; sourceTree = "<group>"; };
 		AB25E38F16265427006E0576 /* StaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticTableViewController.h; sourceTree = "<group>"; };
 		AB25E39016265427006E0576 /* StaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticTableViewController.m; sourceTree = "<group>"; };
+		AB25E39216266A54006E0576 /* DynamicTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTableViewController.h; sourceTree = "<group>"; };
+		AB25E39316266A54006E0576 /* DynamicTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTableViewController.m; sourceTree = "<group>"; };
+		AB25E3951626794F006E0576 /* france.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = france.gif; path = "../../../../Downloads/ios/NavigationModule 2/NavigationModule/france.gif"; sourceTree = "<group>"; };
+		AB25E3961626794F006E0576 /* germany.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = germany.gif; path = "../../../../Downloads/ios/NavigationModule 2/NavigationModule/germany.gif"; sourceTree = "<group>"; };
+		AB25E3971626794F006E0576 /* spain.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = spain.gif; path = "../../../../Downloads/ios/NavigationModule 2/NavigationModule/spain.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +104,8 @@
 				AB25E37516263C54006E0576 /* AppDelegate.h */,
 				AB25E37616263C54006E0576 /* AppDelegate.m */,
 				AB25E37E16263C54006E0576 /* MainStoryboard.storyboard */,
+				AB25E39216266A54006E0576 /* DynamicTableViewController.h */,
+				AB25E39316266A54006E0576 /* DynamicTableViewController.m */,
 				AB25E38F16265427006E0576 /* StaticTableViewController.h */,
 				AB25E39016265427006E0576 /* StaticTableViewController.m */,
 				AB25E38916264878006E0576 /* LanguageViewController.h */,
@@ -111,6 +122,9 @@
 		AB25E36D16263C54006E0576 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				AB25E3951626794F006E0576 /* france.gif */,
+				AB25E3961626794F006E0576 /* germany.gif */,
+				AB25E3971626794F006E0576 /* spain.gif */,
 				AB25E36E16263C54006E0576 /* Navigation-Info.plist */,
 				AB25E36F16263C54006E0576 /* InfoPlist.strings */,
 				AB25E37216263C54006E0576 /* main.m */,
@@ -178,6 +192,9 @@
 				AB25E37B16263C54006E0576 /* Default@2x.png in Resources */,
 				AB25E37D16263C54006E0576 /* Default-568h@2x.png in Resources */,
 				AB25E38016263C54006E0576 /* MainStoryboard.storyboard in Resources */,
+				AB25E3981626794F006E0576 /* france.gif in Resources */,
+				AB25E3991626794F006E0576 /* germany.gif in Resources */,
+				AB25E39A1626794F006E0576 /* spain.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +211,7 @@
 				AB25E38B16264878006E0576 /* LanguageViewController.m in Sources */,
 				AB25E38E16264A76006E0576 /* TranslateViewController.m in Sources */,
 				AB25E39116265427006E0576 /* StaticTableViewController.m in Sources */,
+				AB25E39416266A54006E0576 /* DynamicTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

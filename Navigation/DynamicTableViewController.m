@@ -1,19 +1,19 @@
 //
-//  StaticTableViewController.m
+//  DynamicTableViewController.m
 //  Navigation
 //
 //  Created by Chito Cascante on 10/11/12.
 //  Copyright (c) 2012 prism. All rights reserved.
 //
 
-#import "StaticTableViewController.h"
+#import "DynamicTableViewController.h"
 #import "TranslateViewController.h"
 
-@interface StaticTableViewController ()
+@interface DynamicTableViewController ()
 
 @end
 
-@implementation StaticTableViewController
+@implementation DynamicTableViewController
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -28,12 +28,16 @@
 {
     [super viewDidLoad];
 
-    self.navigationItem.title = @"Hello World";
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.languages = @[
+    @{@"Language" : @"French",@"Translation" : @"Bonjour, Monde!", @"Flag" : @"france.gif"},
+    @{@"Language" : @"Spanish", @"Translation" : @"Hola, Mundo!", @"Flag" : @"spain.gif"},
+    @{@"Language" : @"German", @"Translation" : @"Hallo, Welt!", @"Flag" : @"germany.gif"}];
+    self.navigationItem.title = @"Hello World";
 }
 
 - (void)didReceiveMemoryWarning
@@ -43,31 +47,33 @@
 }
 
 #pragma mark - Table view data source
-/*
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+
     // Return the number of rows in the section.
-    return 0;
+    return [self.languages count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    NSDictionary *oneLanguage = [self.languages objectAtIndex:indexPath.row];
+    cell.textLabel.text = [oneLanguage objectForKey:@"Language"];
+      
     return cell;
 }
-*/
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
@@ -121,25 +127,13 @@
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
-    TranslateViewController * vc = [segue destinationViewController];
-    if ([[segue identifier] isEqualToString:@"French"]) {
-        vc.translatedText = @"Bonjour, Monde!";
-        vc.title = segue.identifier;
-    }
-    if ([[segue identifier] isEqualToString:@"Spanish"]) {
-        vc.translatedText = @"Hola, Mundo!";
-        vc.title = segue.identifier;
-
-    }
-    if ([[segue identifier] isEqualToString:@"German"]) {
-        vc.translatedText = @"Hallo, Welt";
-        vc.title = segue.identifier;
-
-    }
-    if ([[segue identifier] isEqualToString:@"Filipino"]) {
-        vc.translatedText = @"Mabuhay, Lupa";
-        vc.title = segue.identifier;
-
+    if ([[segue identifier] isEqualToString:@"Translate"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        NSDictionary *oneLanguage = [self.languages objectAtIndex:indexPath.row];
+        TranslateViewController *vc = [segue destinationViewController];
+        vc.language = [oneLanguage objectForKey:@"Language"];
+        vc.translatedText = [oneLanguage objectForKey:@"Translation"];
+        vc.flag = [oneLanguage objectForKey:@"Flag"];
     }
 }
 

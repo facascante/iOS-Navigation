@@ -12,7 +12,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="nmp-CP-RRY" kind="relationship" relationship="rootViewController" id="kqe-21-hdR"/>
+                        <segue destination="W7t-2t-C24" kind="relationship" relationship="rootViewController" id="les-SF-4Vw"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8XR-hF-rYR" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,7 +24,7 @@
             <objects>
                 <tableViewController id="nmp-CP-RRY" customClass="StaticTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="nco-b1-YvP">
-                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="548"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -193,6 +193,46 @@
             </objects>
             <point key="canvasLocation" x="-213" y="842"/>
         </scene>
+        <!--Dynamic Table View Controller-->
+        <scene sceneID="MJe-ig-4t4">
+            <objects>
+                <tableViewController id="W7t-2t-C24" customClass="DynamicTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="084-Hy-0nS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="q6o-LL-c8A" style="IBUITableViewCellStyleDefault" id="0ia-0r-i1P">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q6o-LL-c8A">
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <segue destination="u9W-hA-NQa" kind="push" identifier="Translate" id="U4T-AV-InM"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="W7t-2t-C24" id="pi5-4u-OWl"/>
+                            <outlet property="delegate" destination="W7t-2t-C24" id="2Oc-y7-itO"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="7re-4l-xvQ"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1pP-ox-YF9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="283" y="1087"/>
+        </scene>
         <!--Translate View Controller-->
         <scene sceneID="KUw-Yi-MHe">
             <objects>
@@ -206,16 +246,25 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDe-Nl-KzC">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="257" id="7lb-PX-542"/>
+                                    <constraint firstAttribute="height" constant="185" id="eqG-sQ-gVR"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="yDe-Nl-KzC" firstAttribute="centerX" secondItem="fvP-d3-Rrm" secondAttribute="centerX" type="default" id="Fxd-9C-3sf"/>
                             <constraint firstItem="6on-ZO-8Al" firstAttribute="top" secondItem="fvP-d3-Rrm" secondAttribute="top" constant="27" id="ZOX-CM-vNZ"/>
-                            <constraint firstItem="6on-ZO-8Al" firstAttribute="leading" secondItem="fvP-d3-Rrm" secondAttribute="leading" constant="107" id="yaM-NJ-uFe"/>
+                            <constraint firstItem="6on-ZO-8Al" firstAttribute="leading" secondItem="fvP-d3-Rrm" secondAttribute="leading" constant="107" id="uDO-UP-Pzg"/>
+                            <constraint firstItem="yDe-Nl-KzC" firstAttribute="top" secondItem="fvP-d3-Rrm" secondAttribute="top" constant="98" id="uPz-aF-pqF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wgd-dq-rXK"/>
                     <connections>
                         <outlet property="displayLabel" destination="6on-ZO-8Al" id="puh-PW-uTs"/>
+                        <outlet property="flagImageView" destination="yDe-Nl-KzC" id="w3t-gM-hJa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ah-cx-Ckq" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -224,6 +273,9 @@
         </scene>
     </scenes>
     <classes>
+        <class className="DynamicTableViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DynamicTableViewController.h"/>
+        </class>
         <class className="LanguageViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LanguageViewController.h"/>
         </class>
@@ -237,6 +289,7 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/TranslateViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="displayLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="flagImageView" candidateClass="UIImageView"/>
             </relationships>
         </class>
     </classes>
@@ -246,6 +299,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="0R7-aH-gxO"/>
+        <segue reference="U4T-AV-InM"/>
     </inferredMetricsTieBreakers>
 </document>

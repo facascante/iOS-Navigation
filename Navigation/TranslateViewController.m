@@ -27,7 +27,9 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.title = self.language;
     self.displayLabel.text = self.translatedText;
+    self.flagImageView.image = [UIImage imageNamed:self.flag];
 }
 
 - (void)didReceiveMemoryWarning

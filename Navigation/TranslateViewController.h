@@ -10,7 +10,9 @@
 
 @interface TranslateViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *displayLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *flagImageView;
 
 @property (strong, nonatomic) NSString *translatedText;
-
+@property (strong, nonatomic) NSString *language;
+@property (strong, nonatomic) NSString *flag;
 @end
