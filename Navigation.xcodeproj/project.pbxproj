@@ -20,6 +20,7 @@
 		AB25E38316263C54006E0576 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E38216263C54006E0576 /* ViewController.m */; };
 		AB25E38B16264878006E0576 /* LanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E38A16264878006E0576 /* LanguageViewController.m */; };
 		AB25E38E16264A76006E0576 /* TranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E38D16264A76006E0576 /* TranslateViewController.m */; };
+		AB25E39116265427006E0576 /* StaticTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E39016265427006E0576 /* StaticTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,8 @@
 		AB25E38A16264878006E0576 /* LanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageViewController.m; sourceTree = "<group>"; };
 		AB25E38C16264A76006E0576 /* TranslateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateViewController.h; sourceTree = "<group>"; };
 		AB25E38D16264A76006E0576 /* TranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateViewController.m; sourceTree = "<group>"; };
+		AB25E38F16265427006E0576 /* StaticTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticTableViewController.h; sourceTree = "<group>"; };
+		AB25E39016265427006E0576 /* StaticTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StaticTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +95,8 @@
 				AB25E37516263C54006E0576 /* AppDelegate.h */,
 				AB25E37616263C54006E0576 /* AppDelegate.m */,
 				AB25E37E16263C54006E0576 /* MainStoryboard.storyboard */,
+				AB25E38F16265427006E0576 /* StaticTableViewController.h */,
+				AB25E39016265427006E0576 /* StaticTableViewController.m */,
 				AB25E38916264878006E0576 /* LanguageViewController.h */,
 				AB25E38A16264878006E0576 /* LanguageViewController.m */,
 				AB25E38C16264A76006E0576 /* TranslateViewController.h */,
@@ -188,6 +193,7 @@
 				AB25E38316263C54006E0576 /* ViewController.m in Sources */,
 				AB25E38B16264878006E0576 /* LanguageViewController.m in Sources */,
 				AB25E38E16264A76006E0576 /* TranslateViewController.m in Sources */,
+				AB25E39116265427006E0576 /* StaticTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
