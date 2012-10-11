@@ -18,6 +18,8 @@
 		AB25E37D16263C54006E0576 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB25E37C16263C54006E0576 /* Default-568h@2x.png */; };
 		AB25E38016263C54006E0576 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB25E37E16263C54006E0576 /* MainStoryboard.storyboard */; };
 		AB25E38316263C54006E0576 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E38216263C54006E0576 /* ViewController.m */; };
+		AB25E38B16264878006E0576 /* LanguageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E38A16264878006E0576 /* LanguageViewController.m */; };
+		AB25E38E16264A76006E0576 /* TranslateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB25E38D16264A76006E0576 /* TranslateViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +39,10 @@
 		AB25E37F16263C54006E0576 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		AB25E38116263C54006E0576 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AB25E38216263C54006E0576 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB25E38916264878006E0576 /* LanguageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LanguageViewController.h; sourceTree = "<group>"; };
+		AB25E38A16264878006E0576 /* LanguageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LanguageViewController.m; sourceTree = "<group>"; };
+		AB25E38C16264A76006E0576 /* TranslateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TranslateViewController.h; sourceTree = "<group>"; };
+		AB25E38D16264A76006E0576 /* TranslateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TranslateViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,10 @@
 				AB25E37516263C54006E0576 /* AppDelegate.h */,
 				AB25E37616263C54006E0576 /* AppDelegate.m */,
 				AB25E37E16263C54006E0576 /* MainStoryboard.storyboard */,
+				AB25E38916264878006E0576 /* LanguageViewController.h */,
+				AB25E38A16264878006E0576 /* LanguageViewController.m */,
+				AB25E38C16264A76006E0576 /* TranslateViewController.h */,
+				AB25E38D16264A76006E0576 /* TranslateViewController.m */,
 				AB25E38116263C54006E0576 /* ViewController.h */,
 				AB25E38216263C54006E0576 /* ViewController.m */,
 				AB25E36D16263C54006E0576 /* Supporting Files */,
@@ -176,6 +186,8 @@
 				AB25E37316263C54006E0576 /* main.m in Sources */,
 				AB25E37716263C54006E0576 /* AppDelegate.m in Sources */,
 				AB25E38316263C54006E0576 /* ViewController.m in Sources */,
+				AB25E38B16264878006E0576 /* LanguageViewController.m in Sources */,
+				AB25E38E16264A76006E0576 /* TranslateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

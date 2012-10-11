@@ -19,10 +19,10 @@
             </objects>
             <point key="canvasLocation" x="-676" y="50"/>
         </scene>
-        <!--View Controller-->
+        <!--Language View Controller-->
         <scene sceneID="5">
             <objects>
-                <viewController id="2" customClass="ViewController" sceneMemberID="viewController">
+                <viewController id="2" customClass="LanguageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -42,7 +42,33 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="u9W-hA-NQa" kind="push" id="Jc3-kU-mf6"/>
+                                    <segue destination="u9W-hA-NQa" kind="push" identifier="French" id="Jc3-kU-mf6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7gL-Qc-ABt">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Spanish">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u9W-hA-NQa" kind="push" identifier="Spanish" id="gl2-Yp-Nis"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1li-NY-0Nk">
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="German">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="u9W-hA-NQa" kind="push" identifier="German" id="aHs-lp-wXp"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -50,8 +76,12 @@
                         <constraints>
                             <constraint firstItem="YT1-Uw-nAW" firstAttribute="centerX" secondItem="wjK-Bw-O0g" secondAttribute="centerX" type="default" id="7aT-Zh-2lD"/>
                             <constraint firstItem="wjK-Bw-O0g" firstAttribute="top" secondItem="3" secondAttribute="top" constant="29" id="Ap2-qd-JLT"/>
-                            <constraint firstItem="YT1-Uw-nAW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="183" id="YZV-Rg-lNV"/>
+                            <constraint firstItem="YT1-Uw-nAW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="130" id="Hsr-k9-Fve"/>
+                            <constraint firstItem="1li-NY-0Nk" firstAttribute="centerX" secondItem="YT1-Uw-nAW" secondAttribute="centerX" type="default" id="YMD-Xn-V6c"/>
+                            <constraint firstItem="7gL-Qc-ABt" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="a9E-Nw-UT5"/>
+                            <constraint firstAttribute="bottom" secondItem="1li-NY-0Nk" secondAttribute="bottom" constant="162" id="apd-iq-OtZ"/>
                             <constraint firstItem="wjK-Bw-O0g" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="118" id="g2e-gH-xVl"/>
+                            <constraint firstItem="7gL-Qc-ABt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="216" id="qSg-VH-CBI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OWi-V7-rIw"/>
@@ -84,20 +114,15 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ah-cx-Ckq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="232" y="58"/>
+            <point key="canvasLocation" x="209" y="58"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="aHs-lp-wXp"/>
+    </inferredMetricsTieBreakers>
 </document>
