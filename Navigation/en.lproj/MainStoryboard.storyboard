@@ -249,7 +249,7 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yDe-Nl-KzC">
                                 <constraints>
                                     <constraint firstAttribute="width" constant="257" id="7lb-PX-542"/>
-                                    <constraint firstAttribute="height" constant="185" id="eqG-sQ-gVR"/>
+                                    <constraint firstAttribute="height" constant="211" id="AED-QG-byZ"/>
                                 </constraints>
                             </imageView>
                         </subviews>
