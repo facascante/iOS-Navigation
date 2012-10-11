@@ -76,12 +76,12 @@
                         <constraints>
                             <constraint firstItem="YT1-Uw-nAW" firstAttribute="centerX" secondItem="wjK-Bw-O0g" secondAttribute="centerX" type="default" id="7aT-Zh-2lD"/>
                             <constraint firstItem="wjK-Bw-O0g" firstAttribute="top" secondItem="3" secondAttribute="top" constant="29" id="Ap2-qd-JLT"/>
-                            <constraint firstItem="YT1-Uw-nAW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="130" id="Hsr-k9-Fve"/>
-                            <constraint firstItem="1li-NY-0Nk" firstAttribute="centerX" secondItem="YT1-Uw-nAW" secondAttribute="centerX" type="default" id="YMD-Xn-V6c"/>
+                            <constraint firstItem="7gL-Qc-ABt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="151" id="GXa-ZQ-DAU"/>
+                            <constraint firstItem="1li-NY-0Nk" firstAttribute="trailing" secondItem="7gL-Qc-ABt" secondAttribute="trailing" type="default" id="Y9x-U2-BP9"/>
                             <constraint firstItem="7gL-Qc-ABt" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="a9E-Nw-UT5"/>
-                            <constraint firstAttribute="bottom" secondItem="1li-NY-0Nk" secondAttribute="bottom" constant="162" id="apd-iq-OtZ"/>
                             <constraint firstItem="wjK-Bw-O0g" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="118" id="g2e-gH-xVl"/>
-                            <constraint firstItem="7gL-Qc-ABt" firstAttribute="top" secondItem="3" secondAttribute="top" constant="216" id="qSg-VH-CBI"/>
+                            <constraint firstItem="1li-NY-0Nk" firstAttribute="top" secondItem="3" secondAttribute="top" constant="216" id="jQ6-tF-zQT"/>
+                            <constraint firstItem="YT1-Uw-nAW" firstAttribute="top" secondItem="3" secondAttribute="top" constant="81" id="tiP-Ve-G9D"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="OWi-V7-rIw"/>
@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="-217" y="58"/>
         </scene>
-        <!--View Controller-->
+        <!--Translate View Controller-->
         <scene sceneID="KUw-Yi-MHe">
             <objects>
-                <viewController id="u9W-hA-NQa" sceneMemberID="viewController">
+                <viewController id="u9W-hA-NQa" customClass="TranslateViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fvP-d3-Rrm">
                         <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -111,12 +111,29 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wgd-dq-rXK"/>
+                    <connections>
+                        <outlet property="displayLabel" destination="6on-ZO-8Al" id="puh-PW-uTs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Ah-cx-Ckq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="209" y="58"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="LanguageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LanguageViewController.h"/>
+        </class>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="TranslateViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TranslateViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="displayLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

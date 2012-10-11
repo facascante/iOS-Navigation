@@ -7,6 +7,7 @@
 //
 
 #import "LanguageViewController.h"
+#import "TranslateViewController.h"
 
 @interface LanguageViewController ()
 
@@ -38,14 +39,15 @@
 }
 
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    TranslateViewController * vc = [segue destinationViewController];
     if ([[segue identifier] isEqualToString:@"French"]) {
-        
+        vc.translatedText = @"Bonjour, Monde!";
     }
     if ([[segue identifier] isEqualToString:@"Spanish"]) {
-        
+        vc.translatedText = @"Hola, Mundo!";
     }
     if ([[segue identifier] isEqualToString:@"German"]) {
-        
+        vc.translatedText = @"Hallo, Welt";
     }
 }
 

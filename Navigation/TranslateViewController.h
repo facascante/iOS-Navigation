@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface TranslateViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UILabel *displayLabel;
+
+@property (strong, nonatomic) NSString *translatedText;
 
 @end
